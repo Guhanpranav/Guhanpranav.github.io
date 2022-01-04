@@ -59,10 +59,14 @@ li a:hover:after{
 }
 
 .content p{
-    font-size: 40px;
-    font-family: "Lucida Console";
-    color : red;
+    font-size: 60px;
+    font-family: Copperplate, Papyrus, fantasy;
+    color : #FFC300 ;
     
+}
+
+.content span{
+    font-size: 50px;
 }
 
 .fspan{
@@ -70,8 +74,270 @@ li a:hover:after{
     font-weight: bolder;
 }
 
+#res p {
+  font-size: 50px;
+}
+
+.rbtn{
+  height:35px;
+  letter-spacing: 2.0px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(37, 35, 35);
+  border: none;
+  border-radius: 45px;
+}
+
+.rbtn:hover{
+  transition: 1s;
+  background-color: aqua;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.rbtn a{
+  text-decoration: none;
+}
+/* 
 #img img{
     height:300px;
+} */
+
+
+/* Education---------------------------------- */
+.education{
+ padding: 0px 0px 0px 45px;
+ }
+
+ .education h3{
+    font-weight: bold;
+    font-family: "Elianto";
+    color: white;
+ }
+
+ .education .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+
+  .education p{
+      color: darkgrey;
+      font-weight: bold;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  
+  /* Clear floats after the columns */
+  .education .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .education .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .education .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #231F20;
+    border-color: #FFC300;
+    border-bottom: transparent;
+    border-left: transparent;
+  }
+
+
+/* Skills--------------------------------------------------------- */
+#skills{
+    padding: 0px 0px 0px 45px;
+    }
+
+#skills h3{
+    font-weight: bold;
+    font-family: "Elianto";
+    color: white;}
+  
+.progress{
+  width: 100%;
+  max-width : 260px;
+  height: 70px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+  
+  .progress-bar{
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+    
+.progress span{
+    color: #231F20;
+    font-weight: bold;
 }
 
 
+@keyframes progress-animation{
+  0%{
+    background-position: 100%;
+  }
+  100%{
+    background-position: 0;
+  }
+}
+
+.prot h5{
+  color: dimgrey;
+}
+
+
+/* project---------------------- */
+
+.proj{
+  padding: 0px 0px 0px 45px;
+}
+
+.proj h3{
+  font-weight: bold;
+  font-family: "Elianto";
+  color: white;}
+
+  .proj .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+
+  .proj p{
+      color: powderblue;
+      font-weight: bold;
+  }
+  
+.proj .visit{
+  background-color: #FFC300;
+  width: 100px;
+  margin-left: 110px;
+}
+
+.visit a{
+text-decoration: none;
+color: black;
+
+}
+
+  /* Remove extra left and right margins, due to padding */
+  
+  /* Clear floats after the columns */
+  .proj .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .proj .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .proj .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #231F20;
+    border-color: red;
+    border-top: transparent;
+    border-right: transparent;
+  }
+
+
+
+  /* contact            ------------------------------- */
+
+  .cont{
+    padding: 0px 0px 0px 45px;
+  }
+  
+  .cont h2{
+    font-weight: bold;
+    font-family: "Elianto";
+    color: aqua;}
+
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      margin: 15vh auto;
+      padding: 15px;
+      border-radius: 15px;
+      border: none;
+      box-shadow: 0 0 15px rgb(180, 51, 73);
+      /* background-color: gray; */
+  }
+  
+ .cont form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+  }
+  
+ .cont input {
+      width: 100%;
+      margin: 5px 0;
+      height: 35px;
+      font-size: 17px;
+      text-align: center;
+      outline: none;
+      border-radius: 15px;
+      border: none;
+      background: rgb(235, 228, 228);
+  }
+  
+ .cont textarea {
+      width: 100%;
+      margin: 5px 0;
+      font-size: 17px;
+      text-align: center;
+      outline: none;
+      border-radius: 15px;
+      border: none;
+      background: rgb(235, 228, 228);
+  }
+ .cont input[type=submit]{
+      margin: 10px auto;
+      width: 120px;
+      background: rgb(216, 31, 62);
+      color: white;
+      cursor: pointer;
+  }
+ .cont input[type=submit]:hover{
+  background: tomato;
+  }
+  @media screen and (max-width:600px) {
+      .cont{
+          width: 90%;
+      }
+  }
