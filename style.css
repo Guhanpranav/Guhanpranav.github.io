@@ -7,6 +7,22 @@ html body{
     background: black;
 }
 
+.nav-item{
+  padding-left: 40px;
+}
+
+@media (max-width: 760px){
+  .nav-item{
+    padding-right: 350px;
+  }
+}
+
+@media (max-width: 760px){
+  .navbar-brand {
+      display: none;
+  }
+}
+
 ul{
     list-style-type: none;
     overflow: hidden;
@@ -231,9 +247,12 @@ li a:hover:after{
 .proj .visit{
   background-color: #FFC300;
   width: 100px;
-  margin-left: 110px;
-}
 
+  /* align-items: center; */
+}
+.proj button{
+  margin: auto;
+}
 .visit a{
 text-decoration: none;
 color: black;
@@ -340,4 +359,9 @@ color: black;
       .cont{
           width: 90%;
       }
+  }
+
+
+  @media screen and (max-width:480px){
+
   }
